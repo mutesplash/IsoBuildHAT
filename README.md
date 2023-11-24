@@ -12,17 +12,17 @@ You'll need a [GPIO](https://www.adafruit.com/product/2822) [header](https://sho
 
 Flip the BuildHAT over and install the header into the GPIO plug.
 
-![Header alignment](https://github.com/mutesplash/IsoBuildHAT/blob/main/README/1.jpg?raw=true)
+![Header alignment](/README/1.jpg?raw=true)
 
-![Install header](https://github.com/mutesplash/IsoBuildHAT/blob/main/README/2.jpg?raw=true)
+![Install header](/README/2.jpg?raw=true)
 
 Connect the USB to TTL adapter.  For this adapter, black is GROUND, Green is Tx, White is Rx.
 
-![USB to TTL connections](https://github.com/mutesplash/IsoBuildHAT/blob/main/README/3.jpg?raw=true)
+![USB to TTL connections](/README/3.jpg?raw=true)
 
 Connect the power
 
-![Connect power](https://github.com/mutesplash/IsoBuildHAT/blob/main/README/4.jpg?raw=true)
+![Connect power](/README/4.jpg?raw=true)
 
 Now run IsoBuildHAT on whatever computer the USB to TTL adapter is plugged in to.
 
