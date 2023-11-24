@@ -147,8 +147,9 @@ class BuildHAT:
                     self.write(b"version\r")
 
         if self.state == HatState.NEEDNEWFIRMWARE:
-            self.resethat()
-            self.loadfirmware(firmware, signature)
+#            self.resethat()
+#            self.loadfirmware(firmware, signature)
+            raise BuildHATError("HAT must be manually reset")
         elif self.state == HatState.BOOTLOADER:
             self.loadfirmware(firmware, signature)
         elif self.state == HatState.OTHER:
@@ -184,15 +185,15 @@ class BuildHAT:
 
     def resethat(self):
         """Reset the HAT"""
-        reset = DigitalOutputDevice(BuildHAT.RESET_GPIO_NUMBER)
-        boot0 = DigitalOutputDevice(BuildHAT.BOOT0_GPIO_NUMBER)
-        boot0.off()
-        reset.off()
-        time.sleep(0.01)
-        reset.on()
-        time.sleep(0.01)
-        boot0.close()
-        reset.close()
+#        reset = DigitalOutputDevice(BuildHAT.RESET_GPIO_NUMBER)
+#        boot0 = DigitalOutputDevice(BuildHAT.BOOT0_GPIO_NUMBER)
+#        boot0.off()
+#        reset.off()
+#        time.sleep(0.01)
+#        reset.on()
+#        time.sleep(0.01)
+#        boot0.close()
+#        reset.close()
         time.sleep(0.5)
 
     def loadfirmware(self, firmware, signature):
