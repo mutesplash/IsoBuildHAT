@@ -10,7 +10,7 @@ from enum import Enum
 from threading import Condition, Timer
 
 import serial
-from gpiozero import DigitalOutputDevice
+#from gpiozero import DigitalOutputDevice
 
 from .exc import BuildHATError
 
