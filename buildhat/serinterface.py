@@ -10,8 +10,8 @@ from enum import Enum
 from threading import Condition, Timer
 
 import serial
-# from gpiozero import DigitalOutputDevice
 
+# from gpiozero import DigitalOutputDevice
 from .exc import BuildHATError
 
 
@@ -187,15 +187,15 @@ class BuildHAT:
 
     def resethat(self):
         """Reset the HAT"""
-         # reset = DigitalOutputDevice(BuildHAT.RESET_GPIO_NUMBER)
-         # boot0 = DigitalOutputDevice(BuildHAT.BOOT0_GPIO_NUMBER)
-         # boot0.off()
-         # reset.off()
-         # time.sleep(0.01)
-         # reset.on()
-         # time.sleep(0.01)
-         # boot0.close()
-         # reset.close()
+        # reset = DigitalOutputDevice(BuildHAT.RESET_GPIO_NUMBER)
+        # boot0 = DigitalOutputDevice(BuildHAT.BOOT0_GPIO_NUMBER)
+        # boot0.off()
+        # reset.off()
+        # time.sleep(0.01)
+        # reset.on()
+        # time.sleep(0.01)
+        # boot0.close()
+        # reset.close()
         time.sleep(0.5)
 
     def loadfirmware(self, firmware, signature):
